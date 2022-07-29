@@ -34,3 +34,10 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'BulkyBook'
+
+- task: Docker@2
+  displayName: 'Upload to docker registry'
+  inputs:
+    containerRegistry: 'bulkybookregistry'
+    repository: 'bulkybook'
+    command: 'buildAndPush'
