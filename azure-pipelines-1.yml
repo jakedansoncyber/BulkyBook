@@ -4,7 +4,7 @@ variables:
   name: Acsname
   value:
 steps:
-- ${{ if eq(Acsname, '') }}:
+- ${{ if eq(variables.Acsname, '') }}:
   - script: echo "This runs"
 
-  - script: echo "This also runsruns"
+- script: echo "This also runsruns"
