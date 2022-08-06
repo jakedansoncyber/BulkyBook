@@ -36,6 +36,7 @@ jobs:
   scan_code:
     
     runs-on: ubuntu-latest
+    needs: build
     
     steps:
       - name: CodeQL static application security testing report
