@@ -33,4 +33,5 @@ jobs:
       with:
         # Artifact name
         name: artifact
+        path: .
         
